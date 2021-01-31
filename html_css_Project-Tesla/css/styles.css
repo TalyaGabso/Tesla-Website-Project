@@ -1,0 +1,231 @@
+/* utility */
+@font-face {
+  font-family: "Gotham";
+  src: url('./fonts/fonts/GothamBook.ttf') format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url('./fonts/fonts/GothamMedium.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url('./fonts/fonts/GothamBold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+*{ 
+  font-family:"Gotham";
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  text-size-adjust: 100%;
+}
+.model-3{
+  height: 100vh;
+  width: 100%;
+}
+/* Main Header Navigation Bar */
+.header-container{
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.2em;
+  position: relative;
+  top:20px;
+  z-index: 10;
+}
+.tesla-logo{
+  float: left;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+}
+
+/*hamburger*/
+.side-menu .hamburger{
+  display: block;
+  float: right;
+}
+.side-menu .hamburger li{
+  list-style: none;
+  margin-bottom: 3px;
+  width: 19px;
+  height: 1.5px;
+  line-height: 2em;
+  border-radius: 2px;
+  background: #ffffff;
+  position: relative;
+  right:15px;
+}
+.side-menu .right-menu{
+  list-style: none;
+  display: block;
+  margin-right: 3vw;
+
+}
+.side-menu .right-menu a{
+  text-decoration: none;
+  color: #ffffff;
+  float: right;
+  margin-left: 20px;
+}
+/*navigation bar*/
+.top-navbar{
+  float:left;
+  display: block;
+  margin-left: 33vw;
+}
+
+.top-navbar ol li{
+  text-decoration: none;
+  display: inline-block;
+  margin:0px 10px;
+}
+.top-navbar ol li a{
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 1.3em;
+  display: inline-block;       
+}
+
+/* MAIN */
+
+/* section 1*/
+.model-3-showcase{
+  background: url('../img/bg-model-3-hero-desktop.jpeg') no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+.model-3-showcase .model-3-container{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+}
+.model-3-showcase .model-3-container .container-title{
+  position: relative;
+  top: 100px;
+  font-size: 40px;
+  line-height: 3em;;
+  color: #ffffff;
+  line-height: 48px;
+}
+.model-3-showcase .model-3-container .description-container{
+  display: block;
+  text-align: center;
+  align-content: center;
+  align-items: stretch;
+  margin: 25px auto;
+  min-width: 100%;
+  height: 100px;
+  position: relative;
+  top: 75vh;
+}
+
+.description-container .speedometer{
+  padding: 0px 20px;
+  display: inline-block;
+  block-size: auto;
+}
+.description-container .speedometer .mph-seconds{
+  font-size: 28px;
+  line-height: 2.2em;
+  letter-spacing: -0.5;
+  font-weight: 500;
+}
+.description-container .speedometer .mph-range{
+  font-size: 12px;
+  line-height: 1.1em;
+  font-weight: 400;
+}
+.description-container .speedometer .mph-seconds span{
+  font-size: 24px;
+  line-height: 2em;
+  letter-spacing: -0.6;
+  font-weight: 500;
+}
+.description-container .divider{
+border-left:1.1px solid #ffffff ;
+}
+.description-container .range{
+  display: block;
+  padding: 0px 20px;
+}
+.description-container .dual-motor{
+  padding: 0px 20px;
+}
+.model-3-showcase .model-3-container .description-container .order-btn{
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  border: 2.5px solid #ffffff;
+  fill-opacity: 0;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px 40px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+.model-3-showcase .model-3-container .description-container .order-btn:hover{
+  color: #171a20;
+  background: #ffffff;
+}
+
+.side_nav-container{
+  display: block;
+  inset-inline-start: 0;
+  -webkit-margin-before: -78px;
+  margin-top: -78px;
+  position: fixed;
+  top: 50%;
+  z-index: 5;
+  left: 0;
+}
+.tab-list{  
+  list-style-type: none;
+  margin: 8px 0;  
+  padding: 0;
+}
+.side_nav-item{  
+  display: block;
+  height: 20px;
+  min-height: 24px;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  width: 60px;
+  -webkit-padding-after: 0;
+  padding-bottom: 0;
+}
+.side_nav-tab{
+  margin-top: 5px;
+    margin-bottom: 0;
+    margin-block: 5px 0;
+    margin-inline: 14px 0;
+   
+}
+.side_nav-lable{
+  line-height: 20px;
+  font-size: 10px;
+    font-weight: 400;
+    inset-inline-start: 0;
+    letter-spacing: .02em;
+    -webkit-margin-start: 24px;
+    margin-inline-start: 24px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    -webkit-transition: opacity .1s ease;
+    transition: opacity .1s ease;
+    width: 300px;
+}
+
